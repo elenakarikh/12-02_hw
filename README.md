@@ -34,6 +34,7 @@ mysql> CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY '123'
 Query OK, 0 rows affected (0,09 sec)
 ```
 1.3. Список пользователей:
+
 ![scrin](scrin1.png)
 
 1.4. Права новому пользователю:
@@ -42,6 +43,7 @@ mysql> GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'localhost';
 Query OK, 0 rows affected (0,05 sec)
 ```
 1.5.
+
 ![scrin](scrin2.png)
 
 1.6. Изменила тип аутентификации:
@@ -88,6 +90,7 @@ Enter password:
 ![scrin](scrin3.png)
 
 1.8. Список таблиц:
+
 ![scrin](scrin4.png)
 
 ---
@@ -140,11 +143,13 @@ customer         | customer_id
 ```
 mysql> SHOW GRANTS FOR 'sys_temp'@'localhost';
 ```
+
 ![scrin](scrin5.png)
 
 ```
 revoke DELETE, INSERT, UPDATE on sakila.* from 'sys_temp'@'localhost';
 ```
+
 ![scrin](scrin6.png)
 
 ---
